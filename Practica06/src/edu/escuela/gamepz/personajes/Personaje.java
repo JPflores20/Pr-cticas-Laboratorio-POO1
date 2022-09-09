@@ -1,4 +1,4 @@
-package edu.escuela.gamepz.personajes; //problemas con package, corregir
+package edu.escuela.gamepz.personajes; 
 
 public class Personaje {//Definición clase principal
     private String nombre; //Nombre privado porqué es un dato privado no público
@@ -60,5 +60,3 @@ public class Personaje {//Definición clase principal
     
 //********************Termina modificación******************************* */
 }//cierra clase
-
-

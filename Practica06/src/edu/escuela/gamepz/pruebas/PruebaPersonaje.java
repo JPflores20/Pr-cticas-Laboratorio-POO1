@@ -1,4 +1,4 @@
-package edu.escuela.gamepz.pruebas;//problema package, corregir
+package edu.escuela.gamepz.pruebas;
 import edu.escuela.gamepz.personajes.Personaje;
 
 
@@ -61,9 +61,7 @@ public class PruebaPersonaje {
         per07.setEdad(NumeroAleatorio);
 
         int NumeroAleatorio2= (int)(Math.random()*1000);
-        per09.set
-        
-        (NumeroAleatorio2);
+        per09.setEdad(NumeroAleatorio2);
 
         //imprimir tres guiones(---)
         System.out.println("---");

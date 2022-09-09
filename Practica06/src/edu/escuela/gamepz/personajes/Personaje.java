@@ -7,22 +7,20 @@ public class Personaje {//Definición clase principal
 
 //*******************Modificaciónes práctica 04************************* */  
     //constructor con edad por defecto =0  
-    public Personaje(String nombre){
-        this.nombre= nombre;
-        edad=0;//edad por defecto es 0
-    }//cierra método
+    public Personaje(String nombre ,int edad){
+        this.nombre=nombre;
+        if (setEdad(edad)){
+            this.edad=edad;
+          }
+        }
+
 //********************Termina modificación******************************* */
 
 
 //modificar el método setNombre para qué solo se pueda cambiar el nombre si la longitud de la cadena recibida es mayor a 5 y menor a 25
-    public boolean setNombre(String nombre){
-        int longitudNombre= nombre.length();
-        if((longitudNombre>5) && (longitudNombre<25)){//mayor a 5 y menor a 25
-           this.nombre= nombre;
-            return true;
-        }
-        else{
-            return false;
+    public void setNombre(String nombre){
+        if(nombre.length()>5 && nombre.length()<25){
+            this.nombre = nombre;
         }
 
     }//cierra método
@@ -32,9 +30,6 @@ public class Personaje {//Definición clase principal
         return nombre;
     }//cierra método
 
-    public void saludar(){//método saludar
-        System.out.println("Hola alumno de POO "+ nombre);
-    }//cierra método
 
 //*******************Modificaciónes práctica 04************************* */
     public int getEdad(){
@@ -55,7 +50,7 @@ public class Personaje {//Definición clase principal
 
 //Agregar método getDetalle(), el cual regresa una cadena con el nombre y la edad separados por un tabulador (\t)
     public String getDetalle(){
-        return nombre+"\t"+edad;
+        return nombre+"  \t"+edad;
     }
     
 //********************Termina modificación******************************* */

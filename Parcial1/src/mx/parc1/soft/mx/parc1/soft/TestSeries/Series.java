@@ -1,16 +1,11 @@
 package mx.parc1.soft.TestSeries;
 import mx.parc1.soft.TestSeries.*;
 public class Series {
-     
+
+//***************************************************************** */
     public static void main(String[] args){
+
         int i, numero = 1, contador;
-
-
-
-
-
-        
-        System.out.println(" Los números primos son:  ");
         while(numero <= 100){
             contador = 0;
             i = 2;
@@ -27,5 +22,8 @@ public class Series {
          numero++;
         }
     }
-        
+//********************************************************************* */     
+
+
+
 }

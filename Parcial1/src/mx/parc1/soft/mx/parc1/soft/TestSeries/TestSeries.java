@@ -1,5 +1,5 @@
 package mx.parc1.soft.TestSeries;
-import mx.parc1.soft.Series.Serie;
+import  mx.parc1.soft.Series.*;
 public class TestSeries {
         //primos(int)
     public static void main(String[] args) {
@@ -13,7 +13,7 @@ public class TestSeries {
         String primo= s.primos(m);
         System.out.println(primo);
 
-
+        System.out.println(" Los números primos son:  ");
 
  
 

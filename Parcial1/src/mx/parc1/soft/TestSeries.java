@@ -1,5 +1,6 @@
 public class TestSeries {
-
+    package mx.parc1.soft.TestSeries; 
+        //primos(int)
     public static void main(String[] args) {
 
         Serie s = new Serie();

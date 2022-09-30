@@ -10,7 +10,7 @@ public class Series {
     
     public void genNumero(int n){
      while (n<100){
-         n= (int)(Math.random()"x"10);
+         n= (int)(Math.random()*10);
          System.out.println("Número: "+ n);
      } 
     

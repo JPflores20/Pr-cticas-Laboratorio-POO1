@@ -19,24 +19,6 @@ public class Personaje {
     }
     /*************Fin del constructor************************************************ */
   
-
-
-    /*********************************************************************** 
-    public boolean setNombre(String nombre) {
-        int nombreLength = nombre.length();
-        if ((nombreLength > 3) && (nombreLength < 20)){
-            this.nombre = nombre;
-            return true;
-        }
-        else {
-            return false;
-        }
-    }
-    */
-    /*************Fin del constructor************************************************ */
-   
-
-
     public String getNombre() {
         return nombre;
     }
@@ -92,9 +74,9 @@ public void addVida(){
 
 
 /************Agregar método addVida()********************* */
-public void addVida(int Restar){
-    if(vida+Restar>0 && vida+Restar<=99){
-        vida+=Restar;
+public void addVida(int add){
+    if(vida+add>0 && vida+add<=99){
+        vida+=add;
     }
 }
 /************Fin método addVida(int) ******************************/

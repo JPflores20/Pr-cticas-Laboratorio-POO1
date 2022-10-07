@@ -17,6 +17,18 @@ public class PruebaHerencia {
       Zombie zom02 = new Zombie("Josseline", true);
       Zombie zom03 = new Zombie("Eduardo");
 
-      
+      //Arreglo llamado persojanes de tipo Personaje en el cual se almacenen las instancias creadas en el paso 8
+      Personaje[] personajes = {per01,per02, plan01,plan02,plan03,plan04,zom01,zom02,zom03};
+      int index = 0;
+
+      //recorre el arreglo con un foreach
+      for (Personaje p : personajes) {
+        //imprimir método getDetalle
+          System.out.println(p.getDetalle());
+          //Generar un número aleatorio entre 1 y 100
+          int aleatorio = (int)(Math.random()*100);
+
+          
+      }
   }
 }

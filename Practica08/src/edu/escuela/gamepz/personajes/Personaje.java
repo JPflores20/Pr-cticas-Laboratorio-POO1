@@ -12,7 +12,6 @@ public class Personaje {
     }
     /*************Fin del constructor************************************************ */
 
-
     /************Constructor sólo recibe nombre y vida por defecto es 3************** */
     public Personaje(String nombre){
         this(nombre, 3);
@@ -22,19 +21,15 @@ public class Personaje {
     public String getNombre() {
         return nombre;
     }
-
     public int getVida() {
         return vida;
     }
-
 
  //Agregar método getDetalle(), el cual regresa una cadena con el nombre y la edad separados por un tabulador (\t)
     public String getDetalle() {
         return (nombre + "\t" + vida);
     }
 //********************Termina modificación******************************* */
-
-
     public boolean setVida(int vida) {
         if ((vida > 0) && (vida <=99)){
             this.vida = vida;
@@ -44,7 +39,6 @@ public class Personaje {
             return false;
         }
     }
-
 /************Agregar método decVida()************************** */
     public void decVida(){//resta el atributo vida en 1
         if(vida-1>0 && vida-1<=99){
@@ -61,8 +55,6 @@ public class Personaje {
     }
 /************Fin método decVida(int) ******************************/
 
-
-
 /************Agregar método addVida()*********************** */
 public void addVida(){
     if(vida+2>0 && vida+2<=99){//añadir uno a vida 
@@ -70,8 +62,6 @@ public void addVida(){
     }
 }
 /************Fin método addVida() ******************************/
-
-
 
 /************Agregar método addVida()********************* */
 public void addVida(int add){

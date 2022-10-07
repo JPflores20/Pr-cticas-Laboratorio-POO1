@@ -3,19 +3,31 @@ import edu.escuela.gamepz.personajes.Personaje;
 
 public class Zombie extends Personaje {
     boolean ataque;
+
+    //La clase Zombie deberá tener tres constructores
+
+  /***************Zombie(nombre, vida, ataque) ********************************/
     public Zombie(String nombre, int vida, boolean ataque){
         super(nombre, vida);
         this.ataque=ataque;
     }
+  /***************Términa contructor ******************************************/
 
+
+  /***************Zombie(nombre, ataque) La vida por defecto es 3 *************/
     public Zombie(String nombre, boolean ataque){
         this(nombre, 3, ataque);
         
     }
+  /***************Términa contructor ******************************************/
 
+
+  /***************Zombie(nombre) La vida por defecto es 3, ataque por defecto es false*************/
     public Zombie(String nombre){
         this(nombre, 3, false);
     }
+  /***************Términa contructor ******************************************/
+
     
     public boolean getAtaque(){
         return ataque;
@@ -48,9 +60,9 @@ public class Zombie extends Personaje {
     } 
     }
 
-    public void addVida(int Restar){    
+    public void addVida(int add){    
     if (ataque){
-        super.addVida(Restar*3);
+        super.addVida(add*3);
     }
     }
 

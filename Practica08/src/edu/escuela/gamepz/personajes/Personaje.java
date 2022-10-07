@@ -1,4 +1,4 @@
-package edu.issoft.pvsz.personajes;
+package edu.escuela.gamepz.personajes;
 
 public class Personaje {  
     //Los atributos nombre y vida deben ser privados
@@ -65,7 +65,7 @@ public class Personaje {
 
 /************Agregar método addVida()*********************** */
 public void addVida(){
-    if(vida+1>0 && vida+1<=99){//añadir uno a vida 
+    if(vida+2>0 && vida+2<=99){//añadir uno a vida 
         vida++;
     }
 }

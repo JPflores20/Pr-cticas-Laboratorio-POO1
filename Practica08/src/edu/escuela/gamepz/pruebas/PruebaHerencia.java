@@ -19,7 +19,7 @@ public class PruebaHerencia {
 
       //Arreglo llamado persojanes de tipo Personaje en el cual se almacenen las instancias creadas en el paso 8
       Personaje[] personajes = {per01,per02, plan01,plan02,plan03,plan04,zom01,zom02,zom03};
-      int index = 0;
+      int N = 0;
 
       //recorre el arreglo con un foreach
       for (Personaje p : personajes) {
@@ -28,7 +28,23 @@ public class PruebaHerencia {
           //Generar un número aleatorio entre 1 y 100
           int aleatorio = (int)(Math.random()*100);
 
-          
+          //Si es una planta imprimir "Soy planta y su atributo escudo", incrementar la vida con el número aleatorio
+          if (p instanceof Planta){
+            Planta tmp = (Planta) p;
+            System.out.println("Soy planta "+ tmp.getEscudo());
+            tmp.addVida(aleatorio);
+          }
+          //Si es una Zombie imprimir "Soy zombie y su atributo ataque", decrementar la vida con el valor aleatorio
+        if (p instanceof Zombie){
+            Zombie tmp = (Zombie) p;
+            System.out.println("Soy zombie "+ tmp.getAtaque());
+            tmp.decVida(aleatorio);
+        }
+
+        //imprimir el número aleatorio generado anteriormente
+        System.out.println(aleatorio + "\n" + p.getDetalle() + "\n");
+        //imprimir *****Objeto N*****; donde N es un contador de 1 a 9
+        System.out.println("*****Objeto " + ++N + "*****");
       }
   }
 }

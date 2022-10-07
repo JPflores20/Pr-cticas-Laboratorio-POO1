@@ -14,8 +14,8 @@ public class Personaje {
 
 
     /************Constructor sólo recibe nombre y vida por defecto es 3************** */
-    public Personaje(String vida){
-        this.vida=3;
+    public Personaje(String nombre){
+        this(nombre, 3);
     }
     /*************Fin del constructor************************************************ */
   

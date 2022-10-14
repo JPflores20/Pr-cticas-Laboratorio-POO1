@@ -22,15 +22,16 @@ public class Prueba {
               if(c==casas[i]){
 
                   
-                  System.out.println(c.toString()+ "Es el mismo objeto que" + casas[i].toString());
+                  System.out.println(c.toString()+ " Es el mismo objeto que " + casas[i].toString());
                   System.out.println("= = = = =");
 
-                }else if(c.equals(casas[i])== true){
-                  System.out.println(c.toString()+ "No son es iguales a" + casas[i].toString());
+                }else if(c.equals(casas[i])== false){
+                  System.out.println(c.toString()+ " No son es iguales a " + casas[i].toString());
                   System.out.println("! ! ! ! !");
+                  break;
 
                 }else{
-                  System.out.println(c.toString()+ "es igual que" + casas[i].toString());
+                  System.out.println(c.toString()+ " es igual que " + casas[i].toString());
                   System.out.println("e e e e e");
 
 
@@ -44,24 +45,3 @@ public class Prueba {
     }
     
 }
-/*int i=0;
-while (i< personas.length){
-    for( Universitario u: personas){
-        if (u== personas[i]){
-            System.out.println("*****"+ u.toString()+ " es identico a "+ personas[i].toString()+ ". son el mismo objeto*****");
-
-        }else if (u.equals(personas[i])== true){
-            System.out.println("**"+ u.toString()+" es igual a "+ personas[i].toString()+
-            " son diferentes objetos");
-        }else{
-            System.out.println(u.toString()+"!="+ personas[i].toString());
-
-
-        }
-    }i++;
-
-                  System.out.println("= = = = =");
-                  System.out.println("e e e e e");
-                  System.out.println("= = = = =");
-}
-*/

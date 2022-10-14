@@ -1,4 +1,4 @@
-package Casas;
+package mx.desasof.inmobiliaria.casas;
 
 public class Casa {
     private int hab;
@@ -16,13 +16,15 @@ public class Casa {
     }
 
     public int hashCode(){
-        return tipo.hashCode() * hab * costo;
+        return tipo.hashCode() * hab * (int)costo;
+
 
     }
 
     public boolean equals (Casa ObjetoCasa){
         if(ObjetoCasa!=null && ObjetoCasa instanceof Casa){
-            if(tipo.equals() && costo.equals()){
+            Casa tmp= (Casa) ObjetoCasa;
+            if(tipo.equals(tmp.tipo) && (costo==tmp.costo)){
                 return true;
             }
         }
@@ -33,4 +35,6 @@ public class Casa {
         return tipo + "\t" + costo + "\t" + hab;
 
     }
+
+
 }

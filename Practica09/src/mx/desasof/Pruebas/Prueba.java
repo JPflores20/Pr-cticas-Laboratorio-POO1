@@ -22,13 +22,13 @@ public class Prueba {
               if(c==casas[i]){
                   System.out.println(c.toString()+ " Es el mismo objeto que " + casas[i].toString());
                   System.out.println("= = = = =");
+                  break;
 
                 }
                 if(c.equals(casas[i])== false){
                   System.out.println(c.toString()+ " No son es iguales a " + casas[i].toString());
                   System.out.println("! ! ! ! !");
-                  
-                 
+                  break;
 
                 }
                   System.out.println(c.toString()+ " es igual que " + casas[i].toString());

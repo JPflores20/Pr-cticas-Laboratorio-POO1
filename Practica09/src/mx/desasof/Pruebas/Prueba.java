@@ -16,7 +16,8 @@ public class Prueba {
     while(i<casas.lenght){
         for(Casa c: casas){
             
-        }
-    }
+        }//for
+        i++;
+    }//while
     
 }

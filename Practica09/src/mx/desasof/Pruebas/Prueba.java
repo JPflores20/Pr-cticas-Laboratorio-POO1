@@ -20,22 +20,20 @@ public class Prueba {
        while(i<casas.length){
            for(Casa c: casas){
               if(c==casas[i]){
-
-                  
                   System.out.println(c.toString()+ " Es el mismo objeto que " + casas[i].toString());
                   System.out.println("= = = = =");
 
-                }else if(c.equals(casas[i])== false){
+                }
+                if(c.equals(casas[i])== false){
                   System.out.println(c.toString()+ " No son es iguales a " + casas[i].toString());
                   System.out.println("! ! ! ! !");
-                  break;
+                  
+                 
 
-                }else{
+                }
                   System.out.println(c.toString()+ " es igual que " + casas[i].toString());
                   System.out.println("e e e e e");
 
-
-                }
 
             } i++;  
 

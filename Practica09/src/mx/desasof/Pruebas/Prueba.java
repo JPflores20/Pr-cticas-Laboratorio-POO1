@@ -36,6 +36,7 @@ public class Prueba {
 
 
             } i++;  
+            System.out.println();
 
             
 

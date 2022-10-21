@@ -6,4 +6,8 @@ public enum Tipo {
     DESKTOP("Escritorio"),
     LAPTOP("Portatil");
 
+
+    private String type;
+    private Tipo (String type){
+    }
 }

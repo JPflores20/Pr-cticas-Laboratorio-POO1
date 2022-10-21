@@ -7,7 +7,7 @@ public class PruebaComputadora {
     Computadora DELL =new Computadora("DELL", Tipo.LAPTOP, Memoria.DDR);
     Computadora HP= new Computadora("HP", Tipo.DESKTOP, Memoria.DDR2);
     Computadora LENOVO= new Computadora("LENOVO", Tipo.WORKSTATION, Memoria.DDR3);
-    Computadora ASUS = new Computadora("ASUS", Tipo.SERVER, Memoria.DDR4);
+    Smallfactor ASUS = new Smallfactor("ASUS", Tipo.SERVER, Memoria.DDR4,true);
 
     Computadora [] compus = {DELL, HP, LENOVO, ASUS};
 

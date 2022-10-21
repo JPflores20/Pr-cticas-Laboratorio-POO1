@@ -1,14 +1,25 @@
 package mx.gob.zacatecas.pruebas;
 import mx.gob.zacatecas.enumerados.equipos.*;
+import mx.gob.zacatecas.enumerados.utilerias.*;
 public class PruebaComputadora {
     public static void main(String[] args){
-    Computadora DELL =new Computadora("DELL", DDR);
-    Computadora HP= new Computadora("HP", DDR2);
-    Computadora LENOVO= new Computadora("LENOVO", DDR3);
-    Computadora ASUS = new Smallfactor("ASUS", DDR4);
+        
+    Computadora DELL =new Computadora("DELL", Tipo.LAPTOP, Memoria.DDR);
+    Computadora HP= new Computadora("HP", Tipo.DESKTOP, Memoria.DDR2);
+    Computadora LENOVO= new Computadora("LENOVO", Tipo.WORKSTATION, Memoria.DDR3);
+    Computadora ASUS = new Computadora("ASUS", Tipo.SERVER, Memoria.DDR4);
 
+    Computadora [] compus = {DELL, HP, LENOVO, ASUS};
 
+    for(Computadora tmp : compus){
+        System.out.println(tmp);
     }
+
+    
+    }
+
+    
+
 
     
 }

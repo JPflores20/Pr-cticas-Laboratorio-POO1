@@ -25,7 +25,7 @@ public class PruebaHerencia {
       //recorre el arreglo con un foreach
       for (Personaje p : personajes) {
         //imprimir método getDetalle
-          System.out.println(p.getDetalle());
+          System.out.println(p.toString());
           //Generar un número aleatorio entre 1 y 10
           int aleatorio = (int)(Math.random()*10);
 

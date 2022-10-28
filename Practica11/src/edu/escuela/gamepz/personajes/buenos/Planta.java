@@ -35,62 +35,34 @@ public class Planta extends Personaje {//clase Planta que hereda de personaje
    
   /**************Planta(nombre) La vida es por defecto 3 y escudo es por defecto A******************/
     public Planta(String nombre) {
-        this(nombre, 3, 'A');
+        this(nombre, 3, Escudo.NULO);
     }
   /***************Términa contructor ******************************************/
 
   
   /**************Método tipo caracter qué regresa escudo********************** */
-   public char getEscudo(){
+   public Escudo getEscudo(){
     return escudo;
     }
   /***************Términa método ******************************************/
 
+  public String toString(){
+    return super.toString() + "\t" + escudo.getNivel();
+  }
 
 
-  /****************Método decVida() ***********************************************/
-    public void decVida(){
-        if(escudo=='A'){
-            super.decVida(2);
-        } else{
-            super.decVida();
-        }
-    }
-  /***************Términa método ******************************************/
 
-
-  /****************Método decVida(int) ***********************************************/
-    public void decVida(int Restar){
-        if (escudo=='A'){
-            super.decVida(Restar*2);
-        }else{
-            super.decVida(Restar);
-        }
-    }
-  /***************Términa método ******************************************/
-
-
-  /****************Método addVida() ***********************************************/
-
-    public void addVida(){
-    if(escudo=='A'){
-        super.addVida(2);
-    } else{
-        super.addVida();
-    }
-    }
-  /***************Términa método ******************************************/
-
-
-  /****************Método addVida(int) ***********************************************/
-    public void addVida(int add){    
-    if 
-    (escudo=='A'){
-        super.addVida(add*2);
-    }else{
-        super.addVida(add);
-    }
-    }
-  /***************Términa método ******************************************/
-
+  public void decVida(){
+    setVida(vida - escudo.getNivel());
+  }
+  public void decVida(int dec){
+    setVida(vida - escudo.getNivel()*dec);
+  }
+  public void addVida(){
+    setVida(vida + escudo.getNivel());
+  }
+  public void addVida(int add){
+    setVida(vida + escudo.getNivel()*add);
+  }
+  
 }

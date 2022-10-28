@@ -39,36 +39,36 @@ public class Zombie extends Personaje implements Muerto {
     }
 
 
-
     public void decVida(){
         if(!ataque){
-            decVida(3);
-        } else{
-            decVida(2);
+            setVida(getVida() - 3);
+        } else {setVida(getVida() -2);
         }
     }
 
 
-    public void decVida(int Restar){
-        if 
-        (ataque==false){
-            decVida(Restar*3);
-        }else{
-            decVida(Restar*2);
+    public void decVida(int decVida){
+        if(!ataque){
+            setVida(getVida() - 3*decVida);
+        } else {setVida(getVida() - 2*decVida);
         }
     }
-/************************************************************ */
+
+
     public void addVida(){
-    if(ataque){
-        addVida(3);
-    } 
+        if(ataque){
+            setVida(getVida() + 3);
+        }
     }
 
-    public void addVida(int add){    
-    if (ataque){
-        addVida(add*3);
+
+    public void addVida(int addVida){
+        if(ataque){
+            setVida(getVida() + 3*addVida);
+        }
     }
-    }
+
+    
 
     public void comer(){
         System.out.println("Comer cerebros");

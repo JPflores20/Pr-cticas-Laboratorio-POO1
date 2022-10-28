@@ -35,6 +35,8 @@ public class PruebaHerencia {
             System.out.println("Soy planta "+ tmp.getEscudo());
             tmp.addVida(aleatorio);
           }
+
+
           //Si es una Zombie imprimir "Soy zombie y su atributo ataque", decrementar la vida con el valor aleatorio
         if (p instanceof Zombie){
             Zombie tmp = (Zombie) p;

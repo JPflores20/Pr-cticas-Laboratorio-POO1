@@ -8,7 +8,7 @@ public class PruebaHerencia {
 
   //Dentro del métoddo principal crear 2 personajes, 4 plantas y 3 zombies
   public static void main(String[] args) {
-      Personaje per01 = new Planta("David", 100);
+      Personaje per01 = new Planta("David", 99);
       Personaje per02 = new Zombie("Bianca");
       Planta plan01 = new Planta("Fabian", 10, Escudo.MEDIO);
       Planta plan02 = new Planta("Almendra", 50);

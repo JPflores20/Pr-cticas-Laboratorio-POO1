@@ -32,7 +32,7 @@ public abstract class Personaje {
     }
 
  //Agregar método getDetalle(), el cual regresa una cadena con el nombre y la edad separados por un tabulador (\t)
-    public String getDetalle() {
+    public String toString() {
         return (nombre + "\t" + vida);
     }
 //********************Termina modificación******************************* */

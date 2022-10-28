@@ -53,16 +53,16 @@ public class Planta extends Personaje {//clase Planta que hereda de personaje
 
 
   public void decVida(){
-    setVida(vida - escudo.getNivel());
+    setVida(getVida() - escudo.getNivel());
   }
   public void decVida(int dec){
-    setVida(vida - escudo.getNivel()*dec);
+    setVida(getVida() - escudo.getNivel()*dec);
   }
   public void addVida(){
-    setVida(vida + escudo.getNivel());
+    setVida(getVida() + escudo.getNivel());
   }
   public void addVida(int add){
-    setVida(vida + escudo.getNivel()*add);
+    setVida(getVida() + escudo.getNivel()*add);
   }
-  
+
 }

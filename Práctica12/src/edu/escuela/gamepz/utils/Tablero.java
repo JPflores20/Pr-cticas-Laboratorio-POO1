@@ -34,14 +34,16 @@ public class Tablero {
    } 
    //--------------------------------------------------------------------------------
 
+    //---------------------------Método Borrar------------------------------------
    public static void borrar(int poss) throws PersException {
-    if ((poss < 0) || (poss > MAX_SIZE)) {
+    if ((poss < 0) || (poss >= MAX_SIZE)) {
         throw new PersException("Indice fuera de rango ",poss);
     }
     if (PERSONAJES[poss] == null){
         throw new PersException("Si personaje para borrar ",poss);
     }
     PERSONAJES[poss]=null;
+   //--------------------------------------------------------------------------------
     
    
 }

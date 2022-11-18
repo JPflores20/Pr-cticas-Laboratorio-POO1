@@ -15,23 +15,30 @@ import edu.escuela.gamepz.utils.Escudo;
 import edu.escuela.gamepz.utils.Tablero;
 
 import java.io.File;
-import java.util.ArrayList;
-import java.util.*;
+import java.util.Scanner;
 
 public class PruebaCollection {
 
-    private static void guardarObjetos(f,arbol){
-
-    }
     
+    private static void mostrarDirectorio(File f){
+        String [] list(f);
+        for(String tmp:f.list()){
+            System.out.println(tmp);
+        }
+    }
+
+    private static void guardarObjetos(f,arbol){
+        list(f);
+    }
     public static void main(String[] args) {
 
         String path = System.getProperty("user.home") + System.getProperty("file.separator");
 	    Scanner s = new Scanner(System.in);
-	    String fname = " ";
+	    String fname = s.nextline();
         System.out.println("Escribe el nombre del archivo o directorio");
         fname = s.nextline();
         path += s.nextline();
+        File f= new File(path);
 
 	    File f = new File(path);
             if(f.exists() && f.isFile()){

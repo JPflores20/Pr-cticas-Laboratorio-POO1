@@ -16,6 +16,9 @@ import edu.escuela.gamepz.utils.Escudo;
 import edu.escuela.gamepz.utils.Tablero;
 
 import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectOutputStream;
 import java.util.Scanner;
 
 public class PruebaCollection {
@@ -27,9 +30,24 @@ public class PruebaCollection {
         }
     }
 
-    private static void guardarObjetos(File f, Collection arbol){
-        
+//está agregando los datos del arbol a arbol.ser
+    private static void guardarObjetos( Collection c){
+            try{
+                FileOutputStream f = new FileOutputStream("dataArbol.ser");
+                ObjectOutputStream s = new ObjectOutputStream(f);
+
+                for(Object o:c){
+                    s.writeObject(o);
+                }
+
+                
+                s.close();
+            }catch(IOException e){
+                e.printStackTrace();
+            }
     }
+
+
     public static void main(String[] args) {
 
         String path = System.getProperty("user.home") + System.getProperty("file.separator");
@@ -40,7 +58,6 @@ public class PruebaCollection {
         path += s.nextLine();//error line a Line
         File f= new File(path);
 
-	    File f = new File(path);
             if(f.exists() && f.isFile()){
              System.out.println("El archivo existe");
              System.exit(0);

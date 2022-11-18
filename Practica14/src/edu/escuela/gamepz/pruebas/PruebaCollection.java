@@ -18,13 +18,20 @@ import java.util.*;
 public class PruebaCollection {
     String path = System.getProperty("user.home") + System.getProperty("file.separator");
 	Scanner s = new Scanner(System.in);
-	String Fname += s.nextline();
+	String fname = " ";
+    path += s.nextline();
 	File f = new File(path);
     if(f.exist()){
-        System.out.println();
+        System.out.println("El archivo existe");
+        System.exist(0);
+        if(file.isDirectory()){
+            mostrarDirectorio(f);
+        }else{
+            guardarObjetos(f,arbol);
+        }else{
+
+        }
     }
-
-
     public static void main(String[] args) {
         Personaje[] datos = {
             new Planta("Fabian", Tablero.genVida()), 

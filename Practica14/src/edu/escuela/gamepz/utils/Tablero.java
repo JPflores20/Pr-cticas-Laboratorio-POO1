@@ -43,8 +43,11 @@ public class Tablero {
         throw new PersException("Si personaje para borrar ",poss);
     }
     PERSONAJES[poss]=null;
-   //--------------------------------------------------------------------------------
     
-   
-}
+    }
+   //--------------------------------------------------------------------------------
+
+    public static int genVida(){
+        return (int)(Math.random()*10+1);
+    }
 }

@@ -4,6 +4,8 @@ import java.util.Collections;
 import java.util.LinkedList;
 import java.util.TreeSet;
 
+import javax.sql.rowset.spi.SyncResolver;
+
 import edu.escuela.gamepz.personajes.Personaje;
 import edu.escuela.gamepz.personajes.buenos.Planta;
 import edu.escuela.gamepz.personajes.malos.Zombie;
@@ -16,23 +18,34 @@ import java.io.File;
 import java.util.*;
 
 public class PruebaCollection {
-    String path = System.getProperty("user.home") + System.getProperty("file.separator");
-	Scanner s = new Scanner(System.in);
-	String fname = " ";
-    path += s.nextline();
-	File f = new File(path);
-    if(f.exist()){
-        System.out.println("El archivo existe");
-        System.exist(0);
-        if(file.isDirectory()){
-            mostrarDirectorio(f);
-        }else{
-            guardarObjetos(f,arbol);
-        }else{
 
-        }
-    }
+
+    
     public static void main(String[] args) {
+
+        String path = System.getProperty("user.home") + System.getProperty("file.separator");
+	    Scanner s = new Scanner(System.in);
+	    String fname = " ";
+        System.out.println("Escribe el nombre del archivo o directorio");
+        fname = s.nextline();
+        path += s.nextline();
+
+	    File f = new File(path);
+            if(f.exists() && f.isFile()){
+             System.out.println("El archivo existe");
+             System.exist(0);
+              if(f.isDirectory()){
+                  mostrarDirectorio(f);
+                  System.exit(0);
+                }
+            }
+        
+
+
+    
+
+
+
         Personaje[] datos = {
             new Planta("Fabian", Tablero.genVida()), 
             new Zombie("Bianca",Tablero.genVida()),

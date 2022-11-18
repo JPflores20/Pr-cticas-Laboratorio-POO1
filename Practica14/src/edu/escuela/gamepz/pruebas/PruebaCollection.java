@@ -40,7 +40,7 @@ public class PruebaCollection {
                     s.writeObject(o);
                 }
 
-                
+
                 s.close();
             }catch(IOException e){
                 e.printStackTrace();
@@ -55,7 +55,7 @@ public class PruebaCollection {
 	    String fname = s.nextLine();
         System.out.println("Escribe el nombre del archivo o directorio");
         fname = s.nextLine();
-        path += s.nextLine();//error line a Line
+        path += fname;//error line a Line
         File f= new File(path);
 
             if(f.exists() && f.isFile()){

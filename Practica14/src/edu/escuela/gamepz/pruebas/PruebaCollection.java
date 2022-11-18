@@ -15,11 +15,14 @@ import edu.escuela.gamepz.utils.Escudo;
 import edu.escuela.gamepz.utils.Tablero;
 
 import java.io.File;
+import java.util.ArrayList;
 import java.util.*;
 
 public class PruebaCollection {
 
+    private static void guardarObjetos(f,arbol){
 
+    }
     
     public static void main(String[] args) {
 
@@ -33,8 +36,8 @@ public class PruebaCollection {
 	    File f = new File(path);
             if(f.exists() && f.isFile()){
              System.out.println("El archivo existe");
-             System.exist(0);
-              if(f.isDirectory()){
+             System.exit(0);
+              if(f.exists() && f.isDirectory()){
                   mostrarDirectorio(f);
                   System.exit(0);
                 }
@@ -80,4 +83,5 @@ public class PruebaCollection {
             System.out.println(p);
         }
     }
+    
 }

@@ -11,13 +11,18 @@ import edu.escuela.gamepz.utils.BySize;
 import edu.escuela.gamepz.utils.ByVida;
 import edu.escuela.gamepz.utils.Escudo;
 import edu.escuela.gamepz.utils.Tablero;
+
+import java.io.File;
 import java.util.*;
 
 public class PruebaCollection {
     String path = System.getProperty("user.home") + System.getProperty("file.separator");
 	Scanner s = new Scanner(System.in);
 	String Fname += s.nextline();
-	F f = new f(path);
+	File f = new File(path);
+    if(f.exist()){
+        System.out.println();
+    }
 
 
     public static void main(String[] args) {

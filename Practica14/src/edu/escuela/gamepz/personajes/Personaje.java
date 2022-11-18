@@ -1,9 +1,11 @@
 package edu.escuela.gamepz.personajes;
 
 import java.text.DecimalFormat;
+import java.util.*;
+import java.io.*;
 
 
-public abstract class Personaje {  
+public abstract class Personaje implements Comparable<Personaje> {  
     //Los atributos nombre y vida deben ser privados
     private String nombre;
     protected int vida;//modificar el atributo edad de la clase Personaje para que ahora se llame vida

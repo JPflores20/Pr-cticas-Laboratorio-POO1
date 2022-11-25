@@ -18,6 +18,8 @@ public class RunHilos {
         String salida1 = "" + ch1;
         String salida2 = "" + ch2;
         elem1.setText(salida1);
+        elem2.setText(salida2);
+
 
     }
 }

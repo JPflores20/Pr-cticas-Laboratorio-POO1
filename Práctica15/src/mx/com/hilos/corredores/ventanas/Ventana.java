@@ -7,6 +7,10 @@ import javax.swing.JTextField;
 import java.awt.Color;
 import java.awt.Dimension;
 import javax.swing.BorderFactory;
+
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+import java.awt.FlowLayout;
 public class Ventana extends JFrame {
     JLabel IbITitulo, IbIElem1, IbIElem2, hElem1, hElem2;
     JTextField txtElem1, txtElem2;
@@ -26,6 +30,15 @@ public class Ventana extends JFrame {
         txtElem1 = new JTextField(3);
         IbIElem2 = new JLabel("Hilo 2");
         btnStart = new JButton("Comenzar");
+
+        btnStart.addActionListener(new ActionListener(){
+            public void actionPerformed(ActionEvent e){
+                btnStart.setEnabled(false);
+            }
+        });
+
+
+
         hElem1 = new JLabel("Aquí va el hilo 1");
         hElem1.setBorder(BorderFactory.createLineBorder(border));
         hElem1.setPreferredSize(IbIDim);
@@ -33,5 +46,21 @@ public class Ventana extends JFrame {
         hElem2.setBorder(BorderFactory.createLineBorder(border));
         hElem2.setPreferredSize(IbIDim);
         btnStart.setPreferredSize(IbIDim);
+
+
+        setTitle("Practica 15");
+        setLayout(new FlowLayout());
+        setSize(ancho,alto);
+        add(IbITitulo);
+        add(IbIElem1);
+        add(txtElem1);
+        add(IbIElem2);
+        add(txtElem2);
+        add(btnStart);
+        add(hElem1);
+        add(hElem2);
+
+
+
     }
 }

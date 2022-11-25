@@ -19,8 +19,8 @@ public class RunHilos {
         String salida2 = "" + ch2;
         elem1.setText(salida1);
         elem2.setText(salida2);
-        Letra hilo1 = new Letra(elem1, ch1);
-        Letra hilo2 = new Letra(elem1, ch2);
+        Letra hilo1 = new Letra(ch1, elem1);
+        Letra hilo2 = new Letra(ch2, elem2);
         Thread run1 = new Thread(hilo1);
         Thread run2 = new Thread(hilo2);
         run1.start();

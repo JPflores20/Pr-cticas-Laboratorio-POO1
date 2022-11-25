@@ -8,10 +8,10 @@ public class RunHilos {
         char ch1 = txt1.getText().charAt(0);
         char ch2 = txt2.getText().charAt(0);
 
-        if(txt1.getText() ==("") ){
+        if(txt1.getText().length()==0){
             ch1= 'E';
         }
-        if(txt2.getText() ==("")){
+        if(txt2.getText().length()==0){
             ch2= 'M';
         }
 

@@ -61,6 +61,9 @@ public class Ventana extends JFrame{
         add(btnStart);
         add(hElem1);
         add(hElem2);
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+        
 
     }
 

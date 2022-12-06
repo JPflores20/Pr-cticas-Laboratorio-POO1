@@ -1,3 +1,5 @@
+package ex.ordinario.eval.Vehiculos;
+
 public class Terrestre extends Vehiculo{//hereda de vehiculo
 	int llantas; //atributo entero llamado llantas
 

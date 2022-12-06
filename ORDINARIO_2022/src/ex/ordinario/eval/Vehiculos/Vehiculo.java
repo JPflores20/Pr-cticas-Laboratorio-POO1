@@ -1,3 +1,5 @@
+package ex.ordinario.eval.Vehiculos;
+
 public class Vehiculo {
 	//Atributos privados
 	private String marca;

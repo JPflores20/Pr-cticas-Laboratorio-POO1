@@ -1,4 +1,5 @@
-public class Ventana{
+package mx.edu.elextra.extraeval.ventanas;
+public class Ventana extends JFrame{
 	public Ventana(){
 		initComponents();
 		setJMenuBar(mb);
@@ -22,19 +23,37 @@ public class Ventana{
 	}
 	private void initComponents(){
 		// Establecer el el tipo de JFrame como un FlowLayout
+		setLayout(new FlowLayout());
 		// Establecer el cierre de la aplicación al cerrar la ventana
+		setDefaultCloseOperation(EXIT_ON_CLOSE);
 		// Crear la Barra de Menú mb
+		JMenuBar mb=new JMenuBar();
 		// Crear el Menú mnFile "Archivo"
+		JMenu mnFile=new JMenu("Archivo");
 		// Crear el Menú Item miOpen "Abrir"
-		// Agregar al miOpen la clase anónima que manda llamar a los métodos siguientes: 
+		JMenuItem miOpen=new JMenuItem("Abrir");
+		// Agregar al miOpen la clase anónima que manda llamar a los métodos siguientes:
+		miOpen.addActionListener(new ActionListener(){
+			public void actionPerformed(Event e){
 				Procesos.openFile();
 				Procesos.getPrev(txMarca, txCosto, txRamP, lbIdx);
+			}
+		}); 
+				
 		//
 		// Crear el Menú Item miOpen "Salir"
+		JMenuItem miSalir=new JMenuItem("Salir");
 		// Agregar al miOpen la clase anónima que manda llamar al método siguientes:
+		miSalir.addActionListener(new ActionListener(){
+			public void actionPerformed(Event e){
 				dispose();
+			}
+		}); 
+				
 		// Crear el menú mnSort "Ordenar por ..."
+		JMenu mnSort=new JMenu("Ordenar por ...");
 		// Crear el Menú Item miMarca "Marca"
+		JMenuItem miMarca=new JMenuItem("Marca");
 		// Crear el Menú Item miCosto "Costo"
 
 		// Crear la etiqueta lbMarca "Marca"

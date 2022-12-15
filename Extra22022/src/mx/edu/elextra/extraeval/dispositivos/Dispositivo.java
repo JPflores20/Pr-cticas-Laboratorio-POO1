@@ -20,15 +20,15 @@ public class Dispositivo {
 	//fin método get atributos
 
 	//orden natural
-	public int compareTo(Dispositivo dispositivo1){//uso de compare to para orden
-		if ((this.marca.compareTo(dispositivo1.marca)) != 0){
-			return (this.marca.compareTo(dispositivo1.marca));
+	public int compareTo(Dispositivo o){
+		int valor = marca.compareTo(o.getMarca());
+		int cos1;
+		int cos2;
+		if (valor!=0){
+			return valor;
 		}
+		return (int)(costo) - (int)(o.getCosto());
 
-		if (this.costo == costo){
-			return (this.costo>dispositivo1.costo)?(1):(-1);
-		}
-		return (this.costo > dispositivo1.costo)?(1):(-1);
 	}
 	
 }

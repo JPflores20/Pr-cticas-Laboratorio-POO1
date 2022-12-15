@@ -20,15 +20,15 @@ public class Dispositivo {
 	//fin método get atributos
 
 	//orden natural
-	public int compareTo(Vehiculo vehiculo1){//uso de compare to para orden
-		if ((this.marca.compareTo(vehiculo1.marca)) != 0){
-			return (this.marca.compareTo(vehiculo1.marca));
+	public int compareTo(Dispositivo dispositivo1){//uso de compare to para orden
+		if ((this.marca.compareTo(dispositivo1.marca)) != 0){
+			return (this.marca.compareTo(dispositivo1.marca));
 		}
 
-		if (this.modelo == modelo){
-			return (this.modelo>vehiculo1.modelo)?(1):(-1);
+		if (this.costo == costo){
+			return (this.costo>dispositivo1.costo)?(1):(-1);
 		}
-		return (this.costo > vehiculo1.costo)?(1):(-1);
+		return (this.costo > dispositivo1.costo)?(1):(-1);
 	}
 	
 }

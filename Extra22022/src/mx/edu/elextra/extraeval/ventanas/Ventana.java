@@ -2,6 +2,8 @@ package mx.edu.elextra.extraeval.ventanas;
 import mx.edu.elextra.extraeval.acciones.Procesos;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.*;
+
 public class Ventana extends JFrame{
 	public Ventana(){
 		initComponents();

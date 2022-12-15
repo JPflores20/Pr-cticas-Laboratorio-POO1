@@ -10,6 +10,6 @@ public class Computadora extends Dispositivo{
 	}
 
 	public String toString(){
-		return super.toString()+"\t"+ram;
+		return super.toString()+ "\t" +ram;
 	}
 }

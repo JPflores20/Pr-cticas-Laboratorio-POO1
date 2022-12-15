@@ -2,33 +2,53 @@ package mx.edu.elextra.extraeval.acciones;
 import javax.swing.*;
 import java.awt.*;
 public class Procesos{
-	// ArrayList que almacena Dispositivos
+	ArrayList<Dispositivo> lista=new ArrayList();
 	private int idx = 0; //indice para moverse en el ArrayList
 	
 	private Procesos(){}
 
-	public void getPrev(JTextField JTextField JTextField JLabel){
+	public void getPrev(JTextField marca, JTextField costo, JTextField ramP , JLabel indice){
 		// Si el tamaño de la lista es 0 llamar a JOptionPane siguiente y terminar el método
-		JOptionPane.showMessageDialog(null, "Lista vacia");
+		if (lista.size()==0) {
+			JOptionPane.showMessageDialog(null, "Lista vacia");
+			return;
+		}
 		// restar a idx 1; en caso de ser 0 no realizar la resta
+		if (idx>0) {
+			idx=idx-1;
+		}
 		// establecer la etiqueta del indice en el valor que corresponda; ejemplo 1/20
+		indice.setText(idx+"/"+lista.size);
 		llenarCampos(marca, costo, ramP);
 	}
-	public void getNext(JTextField JTextField JTextField JLabel){
+	public void getNext(JTextField marca, JTextField costo, JTextField ramP , JLabel indice){
 		// Si el tamaño de la lista es 0 llamar a JOptionPane siguiente y terminar el método
-		JOptionPane.showMessageDialog(null, "Lista vacia");
+		if (lista.size()==0) {
+			JOptionPane.showMessageDialog(null, "Lista vacia");
+			return;
+		}
+		if (idx<lista.size) {
+			idx=idx+1;
+		}
 		// sumar a idx 1; en caso de ser igual al tamaño de la lista no hacer el incremento
 		// establecer la etiqueta del indice en el valor que corresponda; ejemplo 20/20
+		indice.setText(idx+"/"+lista.size);
 		llenarCampos(marca, costo, ramP);
 	}
-	private void llenarCampos(JTextField JTextField JTextField ){
-		// Obtener el elemento de la lista en la posición del indice
+	private void llenarCampos(JTextField marca, JTextField costo, JTextField ramp){
+		Dispositivo dd=lista[idx];
 		// Con los valores marca costo y ram/procesador mostrar en las cajas de texto
+		marca.setText(dd.getMarca());
+		costo.setText(dd.getCosto());
 		// Considerar que puede ser una Computadora o un Celular
 	}
 	public void sortMarca(){
-		// Si la lista está vacía, no se ordena
-		// Ordenar por Marca
+		if (lista==null) {
+			return;
+		}
+		else{
+			lista.sort
+		}
 	}
 	public void sortCosto(){
 		// Si la lista está vacía, no se ordena

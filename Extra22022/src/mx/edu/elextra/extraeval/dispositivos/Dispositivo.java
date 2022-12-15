@@ -1,3 +1,4 @@
+package mx.edu.elextra.extraeval.dispositivos;
 public class Dispositivo {
 
 	private String marca;
@@ -22,8 +23,6 @@ public class Dispositivo {
 	//orden natural
 	public int compareTo(Dispositivo o){
 		int valor = marca.compareTo(o.getMarca());
-		int cos1;
-		int cos2;
 		if (valor!=0){
 			return valor;
 		}

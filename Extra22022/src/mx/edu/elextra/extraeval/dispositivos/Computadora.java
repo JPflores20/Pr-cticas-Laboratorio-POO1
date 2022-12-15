@@ -1,3 +1,4 @@
+package mx.edu.elextra.extraeval.dispositivos;
 public class Computadora extends Dispositivo{
 	private int ram;
 	public Computadora(String marca, float costo, int ram){

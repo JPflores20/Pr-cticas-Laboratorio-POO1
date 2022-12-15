@@ -1,3 +1,6 @@
+package mx.edu.elextra.extraeval;
+import javax.swing.*;
+import java.awt.*;
 public class Procesos{
 	// ArrayList que almacena Dispositivos
 	private int idx = 0; //indice para moverse en el ArrayList

@@ -1,4 +1,4 @@
-package mx.edu.elextra.extraeval;
+package mx.edu.elextra.extraeval.acciones;
 import javax.swing.*;
 import java.awt.*;
 public class Procesos{
